@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Sort</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Find and Sort Orders</h1>
+        <form method="POST">
+            <!-- Nhập min_value -->
+            <div class="form-group">
+                <label for="min_value">Min Value:</label>
+                <input type="number" class="form-control" id="min_value" name="min_value" value="{{ min_value | default(0) }}" step="1" required>
+            </div>
+
+            <!-- Nhập max_value -->
+            <div class="form-group">
+                <label for="max_value">Max Value:</label>
+                <input type="number" class="form-control" id="max_value" name="max_value" value="{{ max_value | default(1000) }}" step="1" required>
+            </div>
+
+            <!-- Chọn thứ tự sắp xếp -->
+            <div class="form-group">
+                <label>Sort Order:</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="sort_type" id="asc" value="asc"
+                    {% if sort_type == 'asc' or sort_type is not defined %}checked{% endif %}>
+                    <label class="form-check-label" for="asc">Ascending</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="sort_type" id="desc" value="desc"
+                    {% if sort_type == 'desc' %}checked{% endif %}>
+                    <label class="form-check-label" for="desc">Descending</label>
+                </div>
+            </div>
+
+            <!-- Submit form -->
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        <hr>
+
+        <!-- Hiển thị bảng kết quả -->
+        {% if tables %}
+            <h2>Sorted Orders</h2>
+            <div class="table-responsive">
+                {{ tables[0]|safe }}
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>

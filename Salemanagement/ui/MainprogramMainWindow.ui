@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>140</y>
+      <width>311</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Đây là màn hình chính&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuH_th_ng">
+    <property name="title">
+     <string>Hệ thống</string>
+    </property>
+    <addaction name="actionthongtintaikhoan"/>
+    <addaction name="separator"/>
+    <addaction name="actiondoimatkhau"/>
+    <addaction name="separator"/>
+    <addaction name="actioncauhinhhethong"/>
+    <addaction name="separator"/>
+    <addaction name="actionthoatphanmem"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuQu_n_l">
+    <property name="title">
+     <string>Quản lý</string>
+    </property>
+    <addaction name="actionQuanLySanPhamDanhMuc"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuanLyDonHang"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuanLyNhanVien"/>
+   </widget>
+   <addaction name="menuH_th_ng"/>
+   <addaction name="menuQu_n_l"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionthongtintaikhoan">
+   <property name="icon">
+    <iconset>
+     <normaloff>../image/ic_thongtintaikhoan.png</normaloff>../image/ic_thongtintaikhoan.png</iconset>
+   </property>
+   <property name="text">
+    <string>Thông tin tài khoản</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actiondoimatkhau">
+   <property name="icon">
+    <iconset>
+     <normaloff>../image/ic_doimatkhau.png</normaloff>../image/ic_doimatkhau.png</iconset>
+   </property>
+   <property name="text">
+    <string>Đổi mật khẩu</string>
+   </property>
+  </action>
+  <action name="actioncauhinhhethong">
+   <property name="icon">
+    <iconset>
+     <normaloff>../image/ic_cauhinh.png</normaloff>../image/ic_cauhinh.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cấu hình hệ thống</string>
+   </property>
+  </action>
+  <action name="actionthoatphanmem">
+   <property name="icon">
+    <iconset>
+     <normaloff>../image/ic_exit.png</normaloff>../image/ic_exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Thoát phần mềm</string>
+   </property>
+  </action>
+  <action name="actionQuanLySanPhamDanhMuc">
+   <property name="icon">
+    <iconset>
+     <normaloff>../image/ic_quanly_sanpham.png</normaloff>../image/ic_quanly_sanpham.png</iconset>
+   </property>
+   <property name="text">
+    <string>Quản lý sản phẩm - danh mục</string>
+   </property>
+  </action>
+  <action name="actionQuanLyDonHang">
+   <property name="icon">
+    <iconset>
+     <normaloff>../image/ic_quanlydonhang.png</normaloff>../image/ic_quanlydonhang.png</iconset>
+   </property>
+   <property name="text">
+    <string>Quản lý đơn hàng</string>
+   </property>
+  </action>
+  <action name="actionQuanLyNhanVien">
+   <property name="icon">
+    <iconset>
+     <normaloff>../image/ic_quanly_nhanvien.png</normaloff>../image/ic_quanly_nhanvien.png</iconset>
+   </property>
+   <property name="text">
+    <string>Quản lý nhân viên</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
