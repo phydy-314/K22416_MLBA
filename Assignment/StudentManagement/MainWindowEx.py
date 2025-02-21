@@ -28,10 +28,10 @@ class MainWindowEx(Ui_MainWindow):
         self.MainWindow.show()
     def connectMySQL(self):
         server = "localhost"
-        port = 3306
-        database = "studentmanagement"
+        port = 8000
+        database = "K22416C"
         username = "root"
-        password = "123456"
+        password = "Phdy@1311"
 
         self.conn = mysql.connector.connect(
             host=server,

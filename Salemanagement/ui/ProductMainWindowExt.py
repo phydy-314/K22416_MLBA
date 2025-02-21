@@ -3,9 +3,9 @@ import traceback
 from PyQt6.QtCore import Qt
 from PyQt6.QtWidgets import QListWidgetItem, QTableWidgetItem, QMessageBox
 
-from Salemanagement.libs.danhmucconnector import DanhMucConnector
-from Salemanagement.libs.sanphamconnector import SanPhamConnector
-from Salemanagement.ui.ProductMainWindow import Ui_MainWindow
+from libs.danhmucconnector import DanhMucConnector
+from libs.sanphamconnector import SanPhamConnector
+from ui.ProductMainWindow import Ui_MainWindow
 
 class ProductMainWindowExt(Ui_MainWindow):
     def __init__(self):

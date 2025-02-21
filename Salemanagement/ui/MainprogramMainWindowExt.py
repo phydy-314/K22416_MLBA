@@ -2,8 +2,8 @@ import sys
 
 from PyQt6.QtWidgets import QMainWindow
 
-from Salemanagement.ui.MainProgramMainWindow import Ui_MainWindow
-from Salemanagement.ui.ProductMainWindowExt import ProductMainWindowExt
+from ui.MainProgramMainWindow import Ui_MainWindow
+from ui.ProductMainWindowExt import ProductMainWindowExt
 
 
 class MainProgramMainWindowExt(Ui_MainWindow):

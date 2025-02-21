@@ -1,5 +1,5 @@
-from Salemanagement.libs.connector import MySQLConnector
-from Salemanagement.models.danhmuc import DanhMuc
+from libs.connector import MySQLConnector
+from models.danhmuc import DanhMuc
 
 
 class DanhMucConnector(MySQLConnector):

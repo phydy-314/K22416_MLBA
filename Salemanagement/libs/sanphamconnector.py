@@ -1,5 +1,5 @@
-from Salemanagement.libs.connector import MySQLConnector
-from Salemanagement.models.sanpham import SanPham
+from libs.connector import MySQLConnector
+from models.sanpham import SanPham
 
 
 class SanPhamConnector(MySQLConnector):

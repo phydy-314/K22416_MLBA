@@ -1,4 +1,4 @@
-from Salemanagement.libs.sanphamconnector import SanPhamConnector
+from libs.sanphamconnector import SanPhamConnector
 
 spc = SanPhamConnector()
 spc.connect()

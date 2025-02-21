@@ -4,10 +4,10 @@ class MySQLConnector:
                  username=None,password=None):
         if server == None:
             self.server = 'localhost'
-            self.port = 3306
+            self.port = 8000
             self.database = 'k22416c_sales'
             self.username = 'root'
-            self.password = '123456'
+            self.password = 'Phydy@1311'
         else:
             self.server = server
             self.port = port
