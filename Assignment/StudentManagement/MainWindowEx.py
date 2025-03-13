@@ -185,7 +185,7 @@ class MainWindowEx(Ui_MainWindow):
         cursor = self.conn.cursor()
         # query all students
         sql = "delete from student "\
-              " where Id=%s"
+              "where Id=%s"
 
         val = (self.lineEditId.text(),)
 
@@ -193,7 +193,7 @@ class MainWindowEx(Ui_MainWindow):
 
         self.conn.commit()
 
-        print(cursor.rowcount, " record removed")
+        print(cursor.rowcount, "record removed")
 
         cursor.close()
         self.selectAllStudent()
