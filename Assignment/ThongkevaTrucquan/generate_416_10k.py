@@ -1,12 +1,12 @@
 import pandas as pd
 import plotly.express as px
+import numpy as np
 
 # Bước 1: Tạo dữ liệu từ bảng
 excel_file = "dataset-416.xlsx"
 df = pd.read_excel(excel_file)
 df = df[['Mã HP', 'Tên học phần', 'Loại môn học', 'Ngôn ngữ', 'Học Kỳ']].dropna()
-df['Số tín chỉ'] = 1  # Thêm cột số tín chỉ giả định
-
+df['Số tín chỉ'] = np.random.randint(1, 4, size=len(df))
 # Tạo cột mới để gộp thông tin học phần
 df['Học phần'] = df['Mã HP'] + ' - ' + df['Tên học phần']
 
